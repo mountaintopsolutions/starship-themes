@@ -50,8 +50,8 @@ truncation_symbol = "…/"
 
 # Replace the '❯' symbol in the prompt with '➜'
 [character] # The name of the module we are configuring is 'character'
-success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
-
+success_symbol = '[󰜴](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+error_symbol = '[](bold red)'
 # Disable the package module, hiding it from the prompt completely
 [package]
 disabled = true
@@ -66,8 +66,8 @@ format = "[$localipv4]($style)"
 ssh_only = false
 disabled = false
 style = "fg:#fffff0 bg:#1d2230"
-format = '[$hostname]($style)[ $ssh_symbol](fg:#394260 bg:#1d2230)'
-ssh_symbol = '󰖟'
+format = '[$hostname]($style)[ $ssh_symbol](fg:#E8E8E8 bg:#1d2230)'
+ssh_symbol = '󰲝'
 
 [battery]
 full_symbol = '🔋 '
@@ -82,7 +82,7 @@ map_symbol = true
 disabled = false
 [os.symbols]
 Arch = "[](bg:#a3aed2 fg:#090c0c)"
-
+Ubuntu = "[](bg:#a3aed2 fg:#090c0c)"
 [git_branch]
 symbol = ""
 style = "bg:#394260"

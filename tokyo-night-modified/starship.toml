@@ -23,14 +23,20 @@ $username\
 $hostname\
 [ \\(](fg:#fffff0 bg:#1d2230)$localip[\\)](fg:#fffff0 bg:#1d2230)\
 [ ](fg:#212736)\
+$fill\
+[](fg:#1d2230)$time\
+[](fg:#212736 bg:#1d2230)$kubernetes$helm\
 \n-$character"""
 add_newline = true
 
-right_format = """
-[](fg:#1d2230)$time\
-[](fg:#212736 bg:#1d2230)$kubernetes$helm\
-\n
-"""
+#right_format = """
+#[](fg:#1d2230)$time\
+#[](fg:#212736 bg:#1d2230)$kubernetes$helm\
+#\n
+#"""
+
+[fill]
+symbol = ' '
 
 [kubernetes]
 style = "fg:#394260 bg:#212736"

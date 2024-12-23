@@ -1,11 +1,7 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
-#format2 = '''
-#[┌───────────────────>](bold blue)
-#[│](bold blue)$time$battery$username$localip$kubernetes$git $directory$rust$package
-#[└$status─>](bold blue)'''
+
 format = """
-[░▒▓](#a3aed2)\
 [ $os ](bg:#a3aed2 fg:#090c0c)\
 [](bg:#769ff0 fg:#a3aed2)\
 $directory\
@@ -27,6 +23,7 @@ $fill\
 [](fg:#1d2230)$time\
 [](fg:#212736 bg:#1d2230)$kubernetes$helm\
 \n-$character"""
+
 add_newline = true
 
 #right_format = """
@@ -42,6 +39,7 @@ symbol = ' '
 style = "fg:#394260 bg:#212736"
 format = "[ $context \\($namespace\\) ]($style)"
 disabled = false
+
 [directory]
 style = "fg:#e3e5e5 bg:#769ff0"
 format = "[ $path ]($style)"
@@ -54,10 +52,11 @@ truncation_symbol = "…/"
 "Music" = " "
 "Pictures" = " "
 
-# Replace the '❯' symbol in the prompt with '➜'
+# Replace the '❯' symbol in the prompt with '󰜴'
 [character] # The name of the module we are configuring is 'character'
-success_symbol = '[󰜴](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+success_symbol = '[󰜴](bold blue)'
 error_symbol = '[](bold red)'
+
 # Disable the package module, hiding it from the prompt completely
 [package]
 disabled = true
@@ -89,6 +88,7 @@ disabled = false
 [os.symbols]
 Arch = "[](bg:#a3aed2 fg:#090c0c)"
 Ubuntu = "[](bg:#a3aed2 fg:#090c0c)"
+
 [git_branch]
 symbol = ""
 style = "bg:#394260"

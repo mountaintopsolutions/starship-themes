@@ -3,6 +3,8 @@ Customized [Starship](https://starship.rs/) Prompt Themes
 ## Prerequisites
 1. Starship Prompt installed: `curl -fsSL https://starship.rs/install.sh | sh`
 
+Remember to set starship as your prompt for zsh by adding `eval "$(starship init zsh)"` to the end of `.zshrc`
+
 2. Requires installation of a [Nerd Font](https://github.com/ryanoasis/nerd-fonts) for icons to show up correctly.
 
 I personally use [FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode) and [FiraMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraMono)
